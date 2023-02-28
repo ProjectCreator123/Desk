@@ -29,7 +29,7 @@ class Desk(QMainWindow):
     def __init__(self):
         super().__init__()
         self.window = QMainWindow()
-        self.setWindowTitle("Desk demo version")
+        self.setWindowTitle("Graphic editor - Desk")
         self.setStyleSheet("background-color: #777777")
         self.mUndoStack = QUndoStack(self)
         self.mUndoStack.setUndoLimit(30)
