@@ -508,10 +508,8 @@ class Desk(QMainWindow):
         self.now_background = QColor(255, 255, 255)
         self.image.fill(self.now_background)
         self.selected_background, self.mode = "", ""
-        self.checkered_or_lined = ""
-        self.opening_file_name = ""
-        self.saving_file_name = ""
-        self.now_file_name = ""
+        self.checkered_or_lined, self.eraser_color = "", QColor(255, 255, 255)
+        self.opening_file_name, self.saving_file_name, self.now_file_name = "", "", ""
         self.update()
 
     def opening(self):
